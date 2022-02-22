@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;  
+    font-family: 'Yantramanav', sans-serif;
+    /* putting margin and padding to zero    */
+}
+
+.bonus{
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 9px 0px 10px;
+}
+.bonus>p{
+    color: white;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 18px;
+}
+.bonus>p>a{
+    color: white;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+/* Country-Button */
+.btn{      
+    position: absolute;
+    right: 37px;
+    background: none;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btn>img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Logo image */
+#logo>a>img{
+    height: 44px;
+}
+
+#upperNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: cne;
+    align-items: center;
+    padding: 11px 29px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+#rightbox{
+    font-size: 20px;
+    color: #414242;
+}
+#rightbox>span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Navbar area */
+#nav{
+    margin-bottom: 10px;
+}
+#nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+#nav>ul li{
+    /* padding: 2px 40px; */
+    font-size: 18px;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+}
+li a:hover{
+    border-bottom: 3px solid #333;
+}
+
+
+/* Sign up Area */
+#info{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 90px auto;
+    color: #393939;
+    margin-bottom: 170px;
+}
+#info>h3{
+    font-size: 2rem;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+h3+p{
+    margin-bottom: 12px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+label{
+    font-weight: 600;
+    /* line-height: 16px; */
+    margin-bottom: 5px;
+}
+input{
+    padding: 10px;
+    margin-bottom: 8px;
+    outline: none;
+}
+p a{
+    color: #333;
+}
+form+p{
+    margin-bottom: 20px;
+    line-height: 21px;
+}
+#SignUp{
+    padding: 10px;
+    font-size: 19px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#SignUp:hover{
+    background-color: #636262;
+}
+
+/* Footer */
+#upper{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.col{
+    width: 13%;
+    margin-left: 30px;
+}
+.col>ul{
+    list-style: none;
+}
+.col>ul>li{
+    margin-bottom: 10px;
+    color: #636262;
+}
+.col>ul>li:first-child{
+    font-size: 18px;
+    color: #333;
+}
+.col>ul>li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.socialLinks{
+    /* border: 2px solid black; */
+    width: 21%;
+}
+.socialLinks>div:first-child{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+.socialMedia{
+    font-size: 23px;
+    margin-right: 8px;
+}
+.socialLinks>div:last-child{
+    font-size: 25px;
+    /* border: 2px solid red; */
+    margin-top: 16px;
+    color: #333;
+}
+
+#lower>ul{
+    display: flex;
+}
+#lower>ul>li{
+    list-style: none;
+    text-decoration: none;
+    padding-left: 40px;
+    color: #636262;
+}
+#lower>ul>li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
