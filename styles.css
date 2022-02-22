@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;  
+    font-family: 'Yantramanav', sans-serif;
+    /* putting margin and padding to zero    */
+}
+
+.bonus{
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 9px 0px 10px;
+}
+.bonus>p{
+    color: white;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 18px;
+}
+.bonus>p>a{
+    color: white;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+/* Country-Button */
+button{      
+    position: absolute;
+    right: 37px;
+    background: none;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+button>img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Logo image */
+#logo>a>img{
+    height: 44px;
+}
+
+#upperNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: cne;
+    align-items: center;
+    padding: 11px 29px;
+    margin-top: 10px;
+}
+#rightbox{
+    font-size: 20px;
+    color: #414242;
+}
+#rightbox>span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Navbar area */
+#nav{
+    margin-bottom: 10px;
+}
+#nav>ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 2px 40px;
+    font-size: 19px;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+}
+li a:hover{
+    border-bottom: 3px solid #333;
+}
