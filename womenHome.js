@@ -1,3 +1,10 @@
+var womenData= JSON.parse(localStorage.getItem("womenData"));
+var addToCard = JSON.parse(localStorage.getItem("addToCard")) || [];
+
+
+
+
+
 var deatils = [
     {
         id:1,
@@ -454,7 +461,23 @@ deatils.map(function(el, index){
   var rat= document.createElement("p");
   rat.innerText=el.rating;
 
-    div.append(picture, top, spone, line, comp, pro, pri, wa, rat);
+  var btn= document.createElement("button");
+  btn.innerText="Add to card";
+  btn.setAttribute("class" , "btn");
+  btn.addEventListener("click", function(){
+      AddToCard(el);
+  })
+
+    div.append(picture, top, spone, line, comp, pro, pri, wa, rat, btn);
     document.querySelector("#models").append(div);
 })
+
+function AddToCard(el)
+{
+    console.log(el);
+    addToCard.push(el);
+    console.log(addToCard);
+    localStorage.setItem("addToCard", JSON.stringify(addToCard));
+
+}
 
