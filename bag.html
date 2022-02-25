@@ -1132,7 +1132,7 @@
     </header>
     <section>
         <div class="buttons">
-            <button> Shopping Bag (<span>0</span>)</button>
+            <button> Shopping Bag (<span id="bagQty">0</span>)</button>
             <button> Saved For Later (<span>0</span>)</button>
         </div>
         <div class="container">
@@ -1143,7 +1143,7 @@
                 <p style="color: #363333;">Items in your bag are not on hold.</p>
                 <div id="cartItems">
                     <!--mergehere-->
-                    <div class="cart" style="display:flex;">
+                    <!-- <div class="cart" style="display:flex;">
                         <div>
                             <img src="https://n.nordstrommedia.com/id/sr3/db1a48ac-22ac-470c-b381-98d6dbb2e0a9.jpeg?w=156&h=240"
                                 alt="">
@@ -1180,7 +1180,7 @@
                         <div>
                             <p>Total: $12345</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div style="display: flex; justify-content: space-between;padding: 10px;">
                     <div class="paymentMethods">
@@ -1195,11 +1195,15 @@
                         color: #302f2f;
                         margin-bottom: 21px;">
                             <p>Subtotal</p>
-                            <p>$122333</p>
+                            <p id="subTotal"></p>
                         </div>
                         <div>
-                            <p style="margin-bottom: 9px;">or 4 interest-free payments of $317.52 with </p>
-                            <button id="nextBtn">Next</button>
+                            <p style="margin-bottom: 9px;display: flex;
+                            align-items: center;">or 4 interest-free payments of $317.52 with <img
+                                    style="height:13px;padding-left: 6px;"
+                                    src="https://www.edigitalagency.com.au/wp-content/uploads/afterpay-logo-png-black-transparent.png"
+                                    alt=""> </p>
+                            <button id="nextBtn">Checkout</button>
                         </div>
                     </div>
                 </div>
@@ -1207,17 +1211,6 @@
 
             <div id="frequentItems">
                 <h4 style="color: #323030; margin-bottom: 5px;">Poeple also viewed</h2>
-                    <div style="display: flex;">
-                        <div><img
-                                src="https://n.nordstrommedia.com/id/sr3/dc302ab8-bb3a-47e2-9a24-22b78ca9f487.jpeg?q=45&dpr=2&h=135.8&w=88"
-                                alt="">
-                        </div>
-                        <div class="info">
-                            <p>Reformation</p>
-                            <p class="bold">INR 11,234</p>
-                            <p>Size 2 available</p>
-                        </div>
-                    </div>
             </div>
         </div>
     </section>
@@ -1322,7 +1315,8 @@
             size: "S",
             color: "Black",
             item: "331170",
-            price: "$1234",
+            price: "1000",
+            qty: 1,
         },
         {
             image_url:
@@ -1332,11 +1326,14 @@
             size: "S",
             color: "Black",
             item: "331170",
-            price: "$4567",
+            price: "2000",
+            qty: 1,
         }]
     function display(cartData) {
-        console.log(cartData);
-        cartData.map(function (e) {
+        // console.log(cartData);
+        document.querySelector("#cartItems").innerHTML = "";
+        cartData.map(function (e, i) {
+
             var outerMost = document.createElement("div");
             outerMost.setAttribute("class", "cart");
 
@@ -1356,7 +1353,7 @@
             var color = document.createElement("p");
             color.innerText = "Color: " + e.color;
             var item = document.createElement("p");
-            item.innerText = e.item;
+            item.innerText = "Item: " + e.item;
             var Dilevery = document.createElement("p");
             Dilevery.innerHTML = ` <i class="fa-solid fa-truck"></i> Dilevery`;
             var dilInfo = document.createElement("p");
@@ -1372,23 +1369,28 @@
 
             var qtyDiv = document.createElement("div");
             var qty = document.createElement("p");
-            qty.innerHTML = `QTY <select style="border: none; outline:none;">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                                <option value="">7</option>
-                                <option value="">8</option>
-                                <option value="">9</option>
-                            </select>`;
-            qty.style.color = "rgb(46, 46, 184)";
-            qtyDiv.append(qty);
+            qty.innerText = e.qty;
+            // qty.style.color = "rgb(46, 46, 184)";
+            // console.log(qty.innerText);
+
+            var add = document.createElement("button");
+            add.setAttribute("class", "addBtn");
+            add.innerText = "+";
+            add.addEventListener("click", function () {
+                addQty(i);
+            })
+            var remove = document.createElement("button");
+            remove.setAttribute("class", "remBtn");
+            remove.innerText = "-";
+            remove.addEventListener("click", function () {
+                removeQty(i);
+            })
+            qtyDiv.append(qty, remove, add);
 
             var totalDiv = document.createElement("div");
             var total = document.createElement("p");
-            total.innerText = "$122233";
+            total.setAttribute("id", "totalItem");
+            total.innerText = "$" + e.price;
             total.style.color = "#363333";
             total.style.fontWeight = "600";
             totalDiv.append(total);
@@ -1412,7 +1414,7 @@
             var name = document.createElement("p");
             name.innerText = e.name;
             var price = document.createElement("p");
-            price.innerText = e.price;
+            price.innerText = "$" + e.price;
             var rating = document.createElement("p");
             rating.innerHTML = `<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>`
             price.setAttribute("class", "bold");
@@ -1426,7 +1428,53 @@
     }
     display(cartData);
     displayFreq(cartData);
+    showTotal();
+    showQty();
 
+    function addQty(index) {
+        cartData[index].qty++;
+        // console.log(cartData[index]);
+
+        // localStorage.setItem("addToCart", JSON.stringify(cart));
+        // priceTotal(index);
+        display(cartData);
+        showTotal();
+        showQty();
+    }
+    function removeQty(index) {
+        // console.log(index);
+        cartData[index].qty--;
+        var total = cartData[index].price * cartData[index].qty;
+        console.log(total);
+        // localStorage.setItem("addToCart", JSON.stringify(cart));
+        display(cartData);
+        showTotal();
+        showQty();
+    }
+
+    function showTotal() {
+        // console.log(discount);
+        var total = cartData.reduce(function (acc, elem) {
+            // console.log(elem.price, elem.qty);
+            return acc + (elem.price * elem.qty);
+        }, 0);
+        document.getElementById("subTotal").innerText = "$" + total;
+        // discount();
+        // console.log(total);
+    }
+    function priceTotal(i) {
+        var itemTot = cartData[i].price * cartData[i].qty;
+        document.getElementById("totalItem").innerText = itemTot;
+        // display(cartData);
+        console.log(itemTot);
+    }
+    function showQty() {
+        var totalQty = cartData.reduce(function (acc, elem) {
+            return acc + elem.qty;
+        }, 0);
+        document.getElementById("bagQty").innerText = totalQty;
+        // console.log(totalQty);
+    }
 </script>
 
 </html>

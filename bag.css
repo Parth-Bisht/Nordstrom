@@ -106,3 +106,20 @@ section{
     margin-bottom: 9px;
     font-size: 15px;
 }
+.remBtn{
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e9e8e8;
+    padding: 1px 13px;
+    cursor: pointer;
+}
+.addBtn{
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e9e8e8;
+    padding: 1px 13px;
+    cursor: pointer;
+    margin-left: 6px;
+}
