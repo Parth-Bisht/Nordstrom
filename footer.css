@@ -8,7 +8,7 @@
 #upper{
     display: flex;
     padding: 10px;
-    margin-bottom: 25px;
+   margin-top: 20px;
 }
 #upper .col{
     width: 13%;
@@ -18,7 +18,7 @@
     list-style: none;
 }
 #upper .col>ul>li{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #636262;
 }
 #upper .col>ul>li:first-child{
@@ -63,4 +63,10 @@
 #lower>ul>li:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+#lower{
+     margin-bottom: 10px;
+}
+footer{
+    background-color: #f3f1f1;
 }
