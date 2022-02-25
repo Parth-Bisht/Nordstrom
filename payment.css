@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Yantramanav", sans-serif;
+  /* putting margin and padding to zero    */
+}
+/* .box {
+  border: 1px solid red;
+} */
+#inner-heading {
+  /* border: 1px solid blue; */
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+#box-1 {
+  /* border: 1px solid blue; */
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+#inner-box-1 {
+  /* border: 1px solid green; */
+  margin: 10px;
+  margin-right: 0px;
+  width: 65%;
+}
+#secure > h2 {
+  font-size: 24px;
+  color: #2e2e2e;
+  font-weight: 500;
+  margin-left: 10px;
+}
+small {
+  font-size: 15.6px;
+  color: #777777;
+}
+#secure-1 {
+  display: flex;
+  padding: 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+  justify-content: space-between;
+}
+#secure {
+  display: flex;
+}
+.pad {
+  padding-top: 7px;
+}
+
+#mark {
+    font-size: 14px;
+    color: #717171;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+#da{
+    font-size: 12px;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+}
+#secure-2 {
+  display: flex;
+  padding: 10px 0;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 18px;
+}
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#card-no{
+    width: 60%;
+    margin-right: 30%;
+}
+#year,#cvv{
+    width: 28%
+}
+/* #form {
+  margin-top: 10px;
+}
+#mail,
+#address {
+  width: 95%;
+}
+#firstName,
+#city,
+#phone,
+#address2 {
+  width: 42%;
+  margin-right: 43px;
+}
+#lastName,
+#postalCode,
+#location,
+#region {
+  width: 42%;
+} */
+
+#SignUp {
+  padding: 9px 12px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 45%;
+  margin-left: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#SignUp:hover {
+  background-color: #636262;
+}
+#btn-blw-text{
+    color: #666;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 0px 15px;
+}
+.font {
+  font-size: small;
+}
+.bottom-text {
+  text-align: center;
+  font-size: small;
+  color: #999;
+}
+.margin-text {
+  margin-top: 20px;
+}
+#inner-box-2 {
+  /* border: 1px solid green; */
+  margin: 10px;
+  margin-left: 0px;
+  width: 35%;
+  background-color: #e1e1e1;
+}
+#upper-part {
+  /* border: 1px solid red; */
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+#order {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+#SignUp-1 {
+  padding: 9px 12px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#SignUp-1:hover {
+  background-color: #636262;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row > td {
+  margin-right: 230px;
+}
+td {
+  padding: 5px;
+}
+
+.promo {
+  margin: 10px 0;
+}
