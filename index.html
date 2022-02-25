@@ -10,6 +10,118 @@
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/footer.css">
     <script src="https://kit.fontawesome.com/157f106a6a.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100%;
+            height: 529px;
+            margin: 10px auto;
+            /* overflow: hidden; */
+            position: relative;
+            /* border: 2px solid black; */
+        }
+
+        main>h1 {
+            width: 90%;
+            /* margin: 10px auto; */
+            /* background-color: #1967D2; */
+            font-weight: bold;
+            color: #333;
+            font-size: 24px;
+            margin-left: 13px;
+        }
+
+        main span {
+            position: absolute;
+            top: 40%;
+            font-size: 60px;
+            font-weight: bold;
+            color: #a19fa1a3;
+            cursor: pointer;
+            left: .5%;
+            z-index: 1;
+        }
+
+        main span:nth-of-type(2) {
+            left: 96%;
+            text-align: right;
+        }
+
+        main>section {
+            width: 98%;
+            height: 443px;
+            /* background: #f4f4f4; */
+            margin: 10px auto;
+            display: flex;
+            justify-content: left;
+            border-top: 1px solid rgb(218, 215, 215);
+            overflow-x: auto;
+        }
+
+        main>section::-webkit-scrollbar {
+            visibility: hidden;
+        }
+
+        main>section>div {
+            min-width: 220px;
+            height: 95%;
+            position: relative;
+            left: 0;
+            /* text-align: center; */
+            /* padding-top: 60px; */
+            /* font-size: 100px; */
+            /* font-weight: bold; */
+            margin: 10px 20px;
+            /* color: white; */
+            /* background: purple; */
+            transition: 0.5s;
+        }
+
+        .products>img {
+            width: 100%;
+            height: 290px;
+        }
+
+        .products {
+            color: #403d40;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .products:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        .products p {
+            color: rgb(82, 82, 82);
+        }
+
+        .products2>img {
+            width: 100%;
+            height: 290px;
+        }
+
+        .products2 {
+            color: #403d40;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .products2:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        .products2 p {
+            color: rgb(82, 82, 82);
+        }
+    </style>
 </head>
 
 <body>
@@ -158,7 +270,7 @@
                         <div class="col">
                             <ul>
                                 <li style="margin-bottom: 20px;" class="bold"><a href="">Women: Get Inspired</a></li>
-                                <li class="bold"><a href="">New Arrivals</a></li>
+                                <li class="bold"><a href="/womenHome.html">New Arrivals</a></li>
                                 <li class="bold"><a href="">ASOS</a></li>
                                 <li class="bold"><a href="">Black Owned & Founded Brands</a></li>
                                 <li class="bold"><a href="">Contemporary</a></li>
@@ -1154,12 +1266,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="top-box-3">
-            <div class="box-3">
-                <div class="inner-box-3">
-                    <p style="    font-size: 17px;">From the best brands of the season.</p>
-                    <p><a href="#"> Designer Sale</a></p>
+        <div class="sliderContainer">
+            <div class="top-box-3">
+                <div class="box-3">
+                    <div class="inner-box-3">
+                        <p style="    font-size: 17px;">From the best brands of the season.</p>
+                        <p><a href="#"> Designer Sale</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1185,6 +1298,94 @@
             </div>
         </div>
 
+        <main>
+            <h1>New Arrivals from top brands </h1>
+
+            <span id="prevBtn">&#139;</span>
+            <span id="nextBtn">&#155;</span>
+            <section>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/5f7a20dc-4496-449e-b0c9-7fac69be3cfa.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Reformation</p>
+                        <p style="font-weight: 700;"> INR-11,223</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/cb9ccecd-6172-4d13-8307-d6e58ff197af.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Reformation</p>
+                        <p style="font-weight: 700;"> INR-10,099</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/4ceab360-ff3d-4149-8ebf-cdd584f3e1d3.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Reformation</p>
+                        <p style="font-weight: 700;"> INR-21,999</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/cf9af69c-e262-4047-808b-ecfd20706317.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Mavi Jeans</p>
+                        <p style="font-weight: 700;"> INR-8,999</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/87c3f088-0c06-48cf-9e6b-b11954ab1da3.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Brooklyn Brigade</p>
+                        <p style="font-weight: 700;"> INR-3,156</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/8617a292-f0bd-469c-a10c-3ac30cba60e1.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Dress the population</p>
+                        <p style="font-weight: 700;"> INR-11,223</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products">
+                    <img src="https://n.nordstrommedia.com/id/sr3/bc1d4277-e4bd-48ce-8537-6767de26176e.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Reformation</p>
+                        <p style="font-weight: 700;"> INR-11,223</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <div class="top-box-4">
             <div class="box-4">
                 <div class="inner-box-4">
@@ -1208,7 +1409,7 @@
 
         <div class="top-box-6">
             <div class="box-6">
-                <div>
+                <div onClick="gotoWomen()">
                     <img src="https://n.nordstrommedia.com/id/bcf8f4f3-1f56-446a-a5c6-45b51e348801.jpeg?" alt="">
                     <p>Women</p>
                 </div>
@@ -1277,11 +1478,102 @@
             </div>
         </div>
 
+
+        <main>
+            <h1>We think you’ll love these</h1>
+
+            <span id="prevBtn2">&#139;</span>
+            <span id="nextBtn2">&#155;</span>
+            <section>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/f4c6a378-0f37-4313-8df6-bba8bc802be6.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Verve Culture</p>
+                        <p style="font-weight: 700;"> INR-5,223</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/5ede1c20-e2f0-4fe0-a6dc-76c8fc6250c4.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Fire & Flavor</p>
+                        <p style="font-weight: 700;"> INR-3,913</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/08044f34-fe67-4235-92cc-5d59dcadf967.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Five Two by Food52</p>
+                        <p style="font-weight: 700;"> INR-1,565</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/08bde284-0922-4ae3-a36c-02562e9e041e.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Kate spade New York</p>
+                        <p style="font-weight: 700;"> INR-5,876</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/8452b0cd-b962-4144-a2a2-71929ba539a6.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Moccamaster</p>
+                        <p style="font-weight: 700;"> INR-21,156</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/4442a73f-c28c-48e4-9cd6-79904e0225bf.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Smeg</p>
+                        <p style="font-weight: 700;"> INR-11,223</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="products2">
+                    <img src="https://n.nordstrommedia.com/id/sr3/a1518ec1-3871-4c80-a75f-74f7aa1668aa.jpeg?q=45&dpr=2&h=365.31&w=230"
+                        alt="">
+                    <div>
+                        <p>Nordstrom</p>
+                        <p style="font-weight: 700;"> INR-11,223</p>
+                        <p><strike>11,444</strike>upto 30% off</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <div class="box-8">
             <p><span class="high-bold">Currently Loving</span></p>
             <p class="size-font negative-margin">Explore favorite looks from Instagram. Tag @Nordstrom to show us your
                 finds.</p>
         </div>
+
+
 
 
         <div class="top-box-9">
@@ -1305,6 +1597,8 @@
 
             </div>
         </div>
+
+
 
         <!-- <div class="box-7">
             <p class="text-font">Treanding near you</p>
@@ -1458,6 +1752,61 @@
     }
     function gotoBag() {
         window.location.href = "bag.html";
+    }
+    function gotoWomen() {
+        window.location.href = "womenHome.html";
+    }
+
+    var nextBtn = document.getElementById("nextBtn");
+    var prevBtn = document.getElementById("prevBtn");
+    var products = document.getElementsByClassName("products");
+
+    var nextBtn2 = document.getElementById("nextBtn2");
+    var prevBtn2 = document.getElementById("prevBtn2");
+    var products2 = document.getElementsByClassName("products2");
+    var l = 0;
+    nextBtn.onclick = () => {
+        l++;
+        for (var i of products) {
+            if (l == 0) { i.style.left = "0px" }
+            if (l == 1) { i.style.left = "-740px" }
+            if (l == 2) { i.style.left = "-1480px" }
+            if (l == 3) { i.style.left = "-2220px" }
+            if (l == 4) { i.style.left = "-2960px" }
+            if (l > 4) { l == 4; }
+        }
+    }
+    prevBtn.onclick = () => {
+        l--;
+        for (var i of products) {
+            if (l == 0) { i.style.left = "0px" }
+            if (l == 1) { i.style.left = "-1000px" }
+            if (l == 2) { i.style.left = "-2000px" }
+            if (l == 3) { i.style.left = "-3000px" }
+            if (l < 0) { l = 0; }
+        }
+    }
+    var m = 0;
+    nextBtn2.onclick = () => {
+        m++;
+        for (var i of products2) {
+            if (m == 0) { i.style.left = "0px" }
+            if (m == 1) { i.style.left = "-740px" }
+            if (m == 2) { i.style.left = "-1480px" }
+            if (m == 3) { i.style.left = "-2220px" }
+            if (m == 4) { i.style.left = "-2960px" }
+            if (m > 4) { m == 4; }
+        }
+    }
+    prevBtn2.onclick = () => {
+        m--;
+        for (var i of products2) {
+            if (m == 0) { i.style.left = "0px" }
+            if (m == 1) { i.style.left = "-1000px" }
+            if (m == 2) { i.style.left = "-2000px" }
+            if (m == 3) { i.style.left = "-3000px" }
+            if (m < 0) { m = 0; }
+        }
     }
 </script>
 

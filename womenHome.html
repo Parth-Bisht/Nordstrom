@@ -5,14 +5,588 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/157f106a6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/footer.css">
-    <link rel="stylesheet" href="/bag.css">
+    <link rel="stylesheet" href="./womenHome.css">
+    <script src="https://kit.fontawesome.com/66c7f85fa2.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/157f106a6a.js" crossorigin="anonymous"></script> -->
     <title>Nordstrom Online & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
+    <style>
+        /* --------------------------------Fotter + womenPage--------------------------------------------------- */
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Yantramanav', sans-serif;
+            /* putting margin and padding to zero    */
+        }
+
+
+        .bold {
+            font-weight: 600;
+        }
+
+        .marginBottom {
+            margin-bottom: 15px;
+        }
+
+        .marginLeft {
+            margin-left: 5px;
+        }
+
+        .bonus {
+            background-color: black;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding: 9px 0px 10px;
+        }
+
+        .bonus>p {
+            color: white;
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Yantramanav', sans-serif;
+            font-size: 18px;
+        }
+
+        .bonus>p>a {
+            color: white;
+            font-weight: 400;
+            line-height: 1.4;
+            font-family: 'Yantramanav', sans-serif;
+        }
+
+        /* <<----------------------Country-Button---------------->> */
+        .India {
+            position: absolute;
+            right: 37px;
+            background: none;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .India>img {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        /* <<------------------Logo image------------------->> */
+        #logo>a>img {
+            height: 44px;
+        }
+
+        #upperNav {
+            display: flex;
+            justify-content: space-between;
+            align-items: cne;
+            align-items: center;
+            padding: 11px 29px;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        #rightbox {
+            font-size: 20px;
+            color: #414242;
+            position: relative;
+        }
+
+        #rightbox>span {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* <<------------------SignIn DropDown------------------->> */
+        .signInDrop {
+            position: absolute;
+            right: -19px;
+            width: 96%;
+            /* border: 2px solid; */
+            background-color: #efecec;
+            padding: 30px 10px;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+
+        .signInDrop>ul {
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+
+        .signInDrop>ul>li {
+            padding: 6px 11px;
+        }
+
+        #dropSignBtn {
+            padding: 10px 30px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            margin-left: 14px;
+        }
+
+        #dropSignBtn:hover {
+            transition: all 0.3s ease-in-out;
+            /* visibility: visible; */
+            background-color: #555757;
+        }
+
+        .spa:hover .signInDrop {
+            visibility: visible;
+        }
+
+        /* <<------------------Navbar area---------------->> */
+        #nav {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        #nav>ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        #nav>ul>li {
+            font-size: 17px;
+        }
+
+        li>a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        li>a:hover {
+            border-bottom: 3px solid #333;
+        }
+
+
+
+        /* <<----------------------DropDown------------------>> */
+        .sub-nav {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            width: 100%;
+            padding: 29px 25px;
+            box-sizing: border-box;
+            visibility: hidden;
+        }
+
+        #sale:hover .sub-nav {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .sub-nav>div:not(:first-child) {
+            margin-left: 73px;
+        }
+
+        .col>ul {
+            list-style: none;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+
+        .col>ul>li {
+            font-size: 15px;
+        }
+
+        .col>ul>li:not(:first-child) {
+            padding: 5px 0px;
+            /* color: #767777; */
+        }
+
+        lightCol>ul>li:not(:first-child) {
+            color: #767777;
+        }
+
+        /* <<--------------Womens--------------->> */
+        .sub-nav2 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            width: 100%;
+            padding: 29px 25px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav2>div:not(:first-child) {
+            margin-left: 73px;
+        }
+
+        #women:hover .sub-nav2 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .col {
+            width: 11%;
+        }
+
+        /* <<--------------Men-------------->> */
+        .sub-nav3 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            width: 100%;
+            padding: 29px 25px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav3>div:not(:first-child) {
+            margin-left: 73px;
+        }
+
+        #men:hover .sub-nav3 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<--------------Kids-------------->> */
+
+        .sub-nav4 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            width: 100%;
+            padding: 29px 25px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav4>div:not(:first-child) {
+            margin-left: 60px;
+        }
+
+        #kids:hover .sub-nav4 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<-------------YoungAdults-------------------->> */
+        .sub-nav5 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            width: 100%;
+            padding: 29px 25px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav5>div:not(:first-child) {
+            margin-left: 60px;
+        }
+
+        #YoungAdults:hover .sub-nav5 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<-----------------ActiveWear--------------->> */
+
+        .sub-nav6 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            justify-content: center;
+            width: 100%;
+            padding: 29px 50px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav6>div:not(:first-child) {
+            margin-left: 50px;
+        }
+
+        #Activewear:hover .sub-nav6 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<-------------------Home-------------->> */
+        .sub-nav7 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            /* justify-content: center; */
+            width: 100%;
+            padding: 29px 50px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav7>div:not(:first-child) {
+            margin-left: 45px;
+        }
+
+        #home:hover .sub-nav7 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<------------------Beauty---------------->> */
+
+        .sub-nav8 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            /* justify-content: center; */
+            width: 100%;
+            padding: 29px 50px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav8>div:not(:first-child) {
+            margin-left: 45px;
+        }
+
+        #beauty:hover .sub-nav8 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<-------------------Designer----------------->> */
+
+        .sub-nav9 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            /* justify-content: center; */
+            width: 100%;
+            padding: 29px 50px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav9>div:not(:first-child) {
+            margin-left: 45px;
+        }
+
+        #designer:hover .sub-nav9 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<---------------------Gifts------------------>> */
+
+        .sub-nav10 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            justify-content: center;
+            width: 100%;
+            padding: 29px 50px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav10>div:not(:first-child) {
+            margin-left: 0px;
+        }
+
+        #gifts:hover .sub-nav10 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* <<----------------Brands-------------->> */
+        .sub-nav11 {
+            display: flex;
+            position: absolute;
+            /* border-bottom: 2px solid rebeccapurple; */
+            top: 30px;
+            left: 1px;
+            background-color: #f9f9f9;
+            justify-content: center;
+            width: 100%;
+            padding: 29px 40px;
+            box-sizing: border-box;
+            visibility: hidden;
+
+        }
+
+        .sub-nav11>div:not(:first-child) {
+            margin-left: 35px;
+        }
+
+        #brands:hover .sub-nav11 {
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #brandsName>p {
+            padding: 3px 0px;
+            letter-spacing: 8px;
+            cursor: pointer;
+        }
+
+        /* <<------------------------------Header End------------------------------------->> */
+
+        /* --------------------------------Fotter + womenPage--------------------------------------------------- */
+
+
+
+
+
+        /* -------------------------------------------womenPage end------------------------------------------- */
+        /* -----------------------------------downfooter-------------------------------------- */
+        #upper {
+            display: flex;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+
+        #upper .col {
+            width: 13%;
+            margin-left: 30px;
+        }
+
+        #upper .col>ul {
+            list-style: none;
+        }
+
+        #upper .col>ul>li {
+            margin-bottom: 10px;
+            color: #636262;
+        }
+
+        #upper .col>ul>li:first-child {
+            font-size: 18px;
+            color: #333;
+        }
+
+        #upper .col>ul>li:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .socialLinks {
+            /* border: 2px solid black; */
+            width: 21%;
+        }
+
+        .socialLinks>div:first-child {
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+        }
+
+        .socialMedia {
+            font-size: 23px;
+            margin-right: 8px;
+        }
+
+        .socialLinks>div:last-child {
+            font-size: 25px;
+            /* border: 2px solid red; */
+            margin-top: 16px;
+            color: #333;
+        }
+
+        #lower>ul {
+            display: flex;
+        }
+
+        #lower>ul>li {
+            list-style: none;
+            text-decoration: none;
+            padding-left: 40px;
+            color: #636262;
+        }
+
+        #lower>ul>li:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            padding: 4px 53px;
+            font-size: 17px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            margin-top: 13px;
+            border: none;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #636262;
+        }
+
+
+        /* -----------------------------------------Down footer--------------------------------------------- */
+    </style>
 </head>
 
 <body>
+    <!------------------Header-started-------------------->
     <header>
 
         <!--------------Bonus-Area--------------->
@@ -65,7 +639,8 @@
                         </ul>
                     </div>
                 </i>
-                <i style="padding-right: 15px; cursor: pointer;" class="fa-solid fa-bag-shopping"></i>
+                <i onClick="gotoBag()" style="padding-right: 15px; cursor: pointer;"
+                    class="fa-solid fa-bag-shopping"></i>
             </div>
         </div>
 
@@ -157,7 +732,7 @@
                         <div class="col">
                             <ul>
                                 <li style="margin-bottom: 20px;" class="bold"><a href="">Women: Get Inspired</a></li>
-                                <li class="bold"><a href="/womenHome.html">New Arrivals</a></li>
+                                <li class="bold"><a href="">New Arrivals</a></li>
                                 <li class="bold"><a href="">ASOS</a></li>
                                 <li class="bold"><a href="">Black Owned & Founded Brands</a></li>
                                 <li class="bold"><a href="">Contemporary</a></li>
@@ -1131,90 +1706,82 @@
             </ul>
         </div>
     </header>
-    <section>
-        <div class="buttons">
-            <button> Shopping Bag (<span id="bagQty">0</span>)</button>
-            <button> Saved For Later (<span>0</span>)</button>
-        </div>
-        <div class="container">
-            <div id="bagItems">
-                <h1 style="font-weight: 400;
-                color: #2c2b2b;">Shopping Bag</h1>
-                <p style="color: #363333;">Choose gift options when you check out</p>
-                <p style="color: #363333;">Items in your bag are not on hold.</p>
-                <div id="cartItems">
-                    <!--mergehere-->
-                    <!-- <div class="cart" style="display:flex;">
-                        <div>
-                            <img src="https://n.nordstrommedia.com/id/sr3/db1a48ac-22ac-470c-b381-98d6dbb2e0a9.jpeg?w=156&h=240"
-                                alt="">
-                        </div>
-                        <div class="itemInfo">
-                            <p>Reformation</p>
-                            <p>Size: 2</p>
-                            <p>Color: Rosemarie</p>
-                            <p>Color: Rosemarie</p>
-                            <p>Item: 567839</p>
-                            <p> <i class="fa-solid fa-truck"></i> Dilevery</p>
-                            <p>International orders usually arrive within 5–13 business days. We'll give you delivery
-                                dates
-                                in checkout.</p>
+    <!---------------------------Header-Ended-------------------------->
 
-                            <div class="remove">
-                                <p>Remove</p>
-                                <p>Save for later</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p style="display: inline-block;">Qty</p><select style="border: none;">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                                <option value="">6</option>
-                                <option value="">7</option>
-                                <option value="">8</option>
-                                <option value="">9</option>
-                            </select>
-                        </div>
-                        <div>
-                            <p>Total: $12345</p>
-                        </div>
-                    </div> -->
-                </div>
-                <div style="display: flex; justify-content: space-between;padding: 10px;">
-                    <div class="paymentMethods">
-                        <p>Accepted Payment Options</p>
-                        <img style="height: 30px;"
-                            src="https://www.latpay.com/wp-content/uploads/2021/03/paymnet-logos.png" alt="">
-                        <p>Need Help? Call 122233455666 or Chat with us</p>
-                        <p>Shipping Internationally?</p>
-                    </div>
-                    <div style="width: 38%;">
-                        <div style="display: flex;justify-content: space-between;    font-size: 21px;
-                        color: #302f2f;
-                        margin-bottom: 21px;">
-                            <p>Subtotal</p>
-                            <p id="subTotal"></p>
-                        </div>
-                        <div>
-                            <p style="margin-bottom: 9px;display: flex;
-                            align-items: center;">or 4 interest-free payments of $317.52 with <img
-                                    style="height:13px;padding-left: 6px;"
-                                    src="https://www.edigitalagency.com.au/wp-content/uploads/afterpay-logo-png-black-transparent.png"
-                                    alt=""> </p>
-                            <button id="nextBtn">Checkout</button>
-                        </div>
-                    </div>
-                </div>
+    <div id="maincon" style="display: flex; margin-bottom: 60px;">
+        <div style="width: 300px;">
+            <div class="category" style="display: flex; justify-content: space-around; border-top: 1px solid rgb(112, 111, 111); border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+            font-size: 15px; ">
+                <p>Category</p>
+
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
             </div>
 
-            <div id="frequentItems">
-                <h4 style="color: #323030; margin-bottom: 5px;">Poeple also viewed</h2>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+            font-size: 15px; ">
+                <p>Size</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
             </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+            font-size: 15px; ">
+                <p>Color</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+            font-size: 15px; ">
+                <p>Brand</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+              font-size: 15px; ">
+                <p>Feature</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+              font-size: 15px; ">
+                <p>Length</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+             font-size: 15px; ">
+                <p>Material</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+              font-size: 15px; ">
+                <p>Neck Style</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+              font-size: 15px; ">
+                <p>Occasion</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+             font-size: 15px; ">
+                <p>Price</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+              font-size: 15px; ">
+                <p>Sale</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+              font-size: 15px; ">
+                <p>Sleeve Length</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+            <div class="category" style="display: flex; justify-content: space-around; border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
+             font-size: 15px; ">
+                <p>Style</p>
+                <i style="cursor: pointer;" class="fa-thin fa-plus"></i>
+            </div>
+
         </div>
-    </section>
+        <div id="models" style="display: grid; grid-template-columns: repeat(4, 1fr);"></div>
+    </div>
+
     <footer>
         <!-----------------UpperArea------------------>
         <div id="upper">
@@ -1305,213 +1872,12 @@
             </ul>
         </div>
     </footer>
+
+
+
 </body>
 <script>
-    var cart = [
-        {
-            image_url:
-                "https://n.nordstrommedia.com/id/sr3/db1a48ac-22ac-470c-b381-98d6dbb2e0a9.jpeg?w=156&h=240",
-            name: "BROOKLYN BRIGADE",
-            desc: "Extra Trim Fit Stretch Button-Up Dress Shirt",
-            size: "S",
-            color: "Black",
-            item: "331170",
-            price: "1000",
-            qty: 1,
-        },
-        {
-            image_url:
-                "https://n.nordstrommedia.com/id/sr3/937d5b3b-70ec-411c-b430-514b9dc8b1e1.jpeg?h=365&w=240&dpr=2",
-            name: "Shorts",
-            desc: "Extra Trim Fit Stretch Button-Up Dress Shirt",
-            size: "M",
-            color: "Black",
-            item: "331170",
-            price: "800",
-            qty: 1,
-        },
-        {
-            image_url:
-                "https://n.nordstrommedia.com/id/sr3/9033bc27-7b03-473c-8ef8-4a36c441b3e2.jpeg?h=365&w=240&dpr=2",
-            name: "Dress the Population",
-            desc: "Extra Trim Fit Stretch Button-Up Dress Shirt",
-            size: "M",
-            color: "Black",
-            item: "331170",
-            price: "11,300",
-            qty: 1,
-        },
-        {
-            image_url:
-                "https://n.nordstrommedia.com/id/sr3/871e472b-0b00-4191-9b46-630410000fbc.jpeg?h=365&w=240&dpr=2",
-            name: "Maggy London",
-            desc: "Extra Trim Fit Stretch Button-Up Dress Shirt",
-            size: "M",
-            color: "Black",
-            item: "331170",
-            price: "10,299",
-            qty: 1,
-        },
-        {
-            image_url:
-                "https://n.nordstrommedia.com/id/sr3/6c8b9cb8-259f-4c15-be96-b4b91c9bf48c.jpeg?h=365&w=240&dpr=2",
-            name: "BROOKLYN BRIGADE",
-            desc: "Extra Trim Fit Stretch Button-Up Dress Shirt",
-            size: "S",
-            color: "Black",
-            item: "331170",
-            price: "2000",
-            qty: 1,
-        }]
-    var cartData = JSON.parse(localStorage.getItem("addToCard"));
-    function display(cartData) {
-        // console.log(cartData);
-        document.querySelector("#cartItems").innerHTML = "";
-        cartData.map(function (e, i) {
-
-            var outerMost = document.createElement("div");
-            outerMost.setAttribute("class", "cart");
-
-            var imgDiv = document.createElement("div");
-            var img = document.createElement("img");
-            img.setAttribute("src", e.image_url);
-            imgDiv.append(img);
-
-            var infoDiv = document.createElement("div");
-            infoDiv.setAttribute("class", "itemInfo");
-            var name = document.createElement("p");
-            name.innerText = e.name;
-            var desc = document.createElement("p");
-            desc.innerText = e.desc;
-            var size = document.createElement("p");
-            size.innerText = "Size: " + e.size;
-            var color = document.createElement("p");
-            color.innerText = "Color: " + e.color;
-            var item = document.createElement("p");
-            item.innerText = "Item: " + e.item;
-            var Dilevery = document.createElement("p");
-            Dilevery.innerHTML = ` <i class="fa-solid fa-truck"></i> Dilevery`;
-            var dilInfo = document.createElement("p");
-            dilInfo.innerText = "International orders usually arrive within 5–13 business days. We'll give you delivery dates in checkout."
-            var remDiv = document.createElement("div");
-            remDiv.setAttribute("class", "remove");
-            var remove = document.createElement("p");
-            remove.innerText = "Remove";
-            var savLater = document.createElement("p");
-            savLater.innerText = "Save For Later";
-            remDiv.append(remove, savLater);
-            infoDiv.append(name, desc, size, color, item, Dilevery, dilInfo, remDiv);
-
-            var qtyDiv = document.createElement("div");
-            var qty = document.createElement("p");
-            qty.innerText = e.qty;
-            // qty.style.color = "rgb(46, 46, 184)";
-            // console.log(qty.innerText);
-
-            var add = document.createElement("button");
-            add.setAttribute("class", "addBtn");
-            add.innerText = "+";
-            add.addEventListener("click", function () {
-                addQty(i);
-            })
-            var remove = document.createElement("button");
-            remove.setAttribute("class", "remBtn");
-            remove.innerText = "-";
-            remove.addEventListener("click", function () {
-                removeQty(i);
-            })
-            qtyDiv.append(qty, remove, add);
-
-            var totalDiv = document.createElement("div");
-            var total = document.createElement("p");
-            total.setAttribute("id", "totalItem");
-            total.innerText = "$" + e.price;
-            total.style.color = "#363333";
-            total.style.fontWeight = "600";
-            totalDiv.append(total);
-            outerMost.append(imgDiv, infoDiv, qtyDiv, totalDiv);
-            document.querySelector("#cartItems").append(outerMost);
-        })
-    }
-
-    function displayFreq(cartData) {
-        cartData.map(function (e) {
-            var outerMost = document.createElement("div");
-            outerMost.style.display = "flex";
-            outerMost.style.cursor = "pointer";
-
-            var imgDiv = document.createElement("div");
-            var img = document.createElement("img");
-            img.setAttribute("src", e.image_url);
-            imgDiv.append(img);
-
-            var infoDiv = document.createElement("div");
-            infoDiv.setAttribute("class", "info");
-            var name = document.createElement("p");
-            name.innerText = e.name;
-            var price = document.createElement("p");
-            price.innerText = "$" + e.price;
-            var rating = document.createElement("p");
-            rating.innerHTML = `<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>`
-            price.setAttribute("class", "bold");
-            var size = document.createElement("p");
-            size.innerText = "Size: " + e.size;
-            infoDiv.append(name, rating, price, size);
-
-            outerMost.append(imgDiv, infoDiv);
-            document.querySelector("#frequentItems").append(outerMost);
-        })
-    }
-    display(cartData);
-    displayFreq(cart);
-    showTotal();
-    showQty();
-
-    function addQty(index) {
-        cartData[index].qty++;
-        // console.log(cartData[index]);
-
-        // localStorage.setItem("addToCart", JSON.stringify(cart));
-        // priceTotal(index);
-        display(cartData);
-        showTotal();
-        showQty();
-    }
-    function removeQty(index) {
-        // console.log(index);
-        cartData[index].qty--;
-        var total = cartData[index].price * cartData[index].qty;
-        console.log(total);
-        // localStorage.setItem("addToCart", JSON.stringify(cart));
-        display(cartData);
-        showTotal();
-        showQty();
-    }
-
-    function showTotal() {
-        // console.log(discount);
-        var total = cartData.reduce(function (acc, elem) {
-            // console.log(elem.price, elem.qty);
-            return acc + (elem.price * elem.qty);
-        }, 0);
-        document.getElementById("subTotal").innerText = "$" + total;
-        // discount();
-        // console.log(total);
-    }
-    function priceTotal(i) {
-        var itemTot = cartData[i].price * cartData[i].qty;
-        document.getElementById("totalItem").innerText = itemTot;
-        // display(cartData);
-        console.log(itemTot);
-    }
-    function showQty() {
-        var totalQty = cartData.reduce(function (acc, elem) {
-            return acc + elem.qty;
-        }, 0);
-        document.getElementById("bagQty").innerText = totalQty;
-        // console.log(totalQty);
-    }
-
+    // var signArr=JSON.parse(localStorage.getItem("localSign"));
     var accArr = JSON.parse(localStorage.getItem("localAcc"));
     var name = accArr[0].firstname;
     // document.getElementById("userName").innerText = accArr[0].firstname + "!";
@@ -1521,6 +1887,10 @@
     function gotoSignIn() {
         window.location.href = "signup.html";
     }
+    function gotoBag() {
+        window.location.href = "bag.html";
+    }
 </script>
 
 </html>
+<script src="./womenHome.js"></script>
