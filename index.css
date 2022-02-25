@@ -2,6 +2,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 .container {
   width: 100%;
   padding: 17px 9px;
@@ -155,6 +156,7 @@ html{
 .top-box-4 {
   /* border: 1px solid blueviolet; */
   margin: 10px;
+  margin-bottom: 40px;
 }
 
 .box-4 {
@@ -210,12 +212,18 @@ html{
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   font-size: 15px;
+  margin-bottom: 38px;
 }
 .box-6 div {
   /* border: 1px solid red; */
   text-align: center;
   color: #000000;
   font-weight: 700;
+  padding-bottom: 20px;
+}
+.box-6 div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .box-6 img {
   cursor: pointer;
@@ -268,6 +276,9 @@ html{
   color: #000000;
   font-weight: 700;
 }
+.box-9 div:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .box-9 img {
   cursor: pointer;
   width: 300px;
@@ -317,10 +328,22 @@ html{
 } */
 
 .twoImg{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .twoImg > div{
   width: 48%;
+}
+.twoImg ul{
+  list-style: none;
+  display: flex;
+}
+.twoImg ul>li{
+  text-decoration: underline;
+  /* font-size: 18px; */
+}
+.twoImg ul>li:not(:first-child){
+ padding-left: 18px;
 }
