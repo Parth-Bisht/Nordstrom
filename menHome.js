@@ -1,94 +1,93 @@
-var womenData = JSON.parse(localStorage.getItem("womenData"));
+var menData = JSON.parse(localStorage.getItem("menData"));
 var addToCard = JSON.parse(localStorage.getItem("addToCard")) || [];
 
 var deatils = [
     {
         id: 1,
-        type: "New Markdown",
-        chezz: "",
+        type: "",
+        chezz: "Devil-Dog Dungarees",
         spon: "",
-        comapny: "Nordstrom Lingerie",
-        product: "Moonlight Pajamas",
+        comapny: "",
+        product: "Athletic Fit Performance Jeans (Garner)",
 
         cprice: "Now: INR 3,137",
         was: "Was: INR 5,228.98   40%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/kp5sya80/pyjama/v/b/r/l-tp4-pink-the-million-club-original-imag3g82tyz77etz.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/59480a7f-86cf-47db-81b3-4aad6259e0e1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         image_url:
-            "https://rukminim1.flixcart.com/image/452/542/kp5sya80/pyjama/v/b/r/l-tp4-pink-the-million-club-original-imag3g82tyz77etz.jpeg?q=50",
-        name: "Moonlight Pajamas",
-        desc: "Extra Trim Fit Stretch Button-Up Dress Shirt",
-        size: "S",
-        color: "Pink",
-        item: "331170",
+            "https://n.nordstrommedia.com/id/sr3/59480a7f-86cf-47db-81b3-4aad6259e0e1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        name: "Athletic Fit Performance Jeans (Garner)",
+        desc: "Extra Trim Fit Stretch Button-Up",
+        size: "L",
+        color: "Light Blue",
+        item: "23170",
         price: "3137",
         qty: 1,
     },
     {
         id: 2,
         type: "",
-        chezz: "Limted-Time sale",
+        chezz: "Price Matched",
         spon: "",
-        comapny: "True & Co.",
-        product: "True Body lift triangle Bra",
+        comapny: "PAIGE",
+        product: "Federal Slim Straight Leg Jeans (Black Shadow)",
 
         cprice: "Now: INR 3,499.40",
         was: "Was: INR 4,665.86   25%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/ks6ef0w0/bra/w/h/d/30b-bu-kristel-1-s-black-jockey-original-imag5spqz9dyuyxx.jpeg?q=50",
-
+        pic: "https://n.nordstrommedia.com/id/sr3/7e3be5e4-b2fa-44ef-8e54-7582d936fa06.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         image_url:
-            "https://rukminim1.flixcart.com/image/452/542/ks6ef0w0/bra/w/h/d/30b-bu-kristel-1-s-black-jockey-original-imag5spqz9dyuyxx.jpeg?q=50",
-        name: "True Body lift triangle Bra",
-        desc: "Fit Stretch",
-        size: "S",
+            "https://n.nordstrommedia.com/id/sr3/7e3be5e4-b2fa-44ef-8e54-7582d936fa06.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        name: "Federal Slim Straight Leg Jeans (Black Shadow)",
+        desc: "Extra Trim Fit Stretch Button-Up",
+        size: "M",
         color: "Black",
-        item: "331170",
-        price: "3499.40",
+        item: "23170",
+        price: "3499",
         qty: 1,
     },
     {
         id: 3,
         type: "",
-        chezz: "",
-        spon: "Sponsored",
-        comapny: "Wit & Wisdom",
-        product: "Wit & Wisdom Ab-Solution Girlfriend Jeans",
+        chezz: "Mavi Jeans",
+        spon: "",
+        comapny: "",
+        product: "Matt Relaxed Fit Jeans (Deep Stanford Comfort)",
 
         cprice: "",
         was: "INR 6,274.78",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/kfoapow0-0/jean/d/z/m/26-7139195-roadster-original-imafw2gy99d5hhtz.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/87512320-11e5-4847-830a-c39097a40d58.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         image_url:
-            "https://rukminim1.flixcart.com/image/309/371/kfoapow0-0/jean/d/z/m/26-7139195-roadster-original-imafw2gy99d5hhtz.jpeg?q=50",
-        name: "Wit & Wisdom Ab-Solution Girlfriend Jeans",
-        desc: "Fit Stretch",
-        size: "S",
+            "https://n.nordstrommedia.com/id/sr3/87512320-11e5-4847-830a-c39097a40d58.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        name: "Matt Relaxed Fit Jeans (Deep Stanford Comfort)",
+        desc: "Extra Trim Fit Stretch Button-Up",
+        size: "M",
         color: "Blue",
-        item: "331170",
-        price: "6275",
+        item: "45470",
+        price: "3499",
         qty: 1,
     },
     {
         id: 4,
         type: "",
         spon: "",
-        chezz: "Zella",
+        chezz: "Devil-Dog Dungarees",
         comapny: "",
         product: "Cozy Active Pocket Joggers",
 
         cprice: "Now: INR 2,365.11 - INR 3,153.48",
         was: "Was: INR 3,941.85 Up to 40% off select color/size",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/ksm49e80/jean/d/f/b/30-jdhol-blue-dnext-original-imag6546x3zpvmcv.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/31feca0b-de81-4e64-8ede-9fd3f8fb72d9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         image_url:
-            "https://rukminim1.flixcart.com/image/309/371/ksm49e80/jean/d/f/b/30-jdhol-blue-dnext-original-imag6546x3zpvmcv.jpeg?q=50",
+            "https://n.nordstrommedia.com/id/sr3/31feca0b-de81-4e64-8ede-9fd3f8fb72d9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         name: "Cozy Active Pocket Joggers",
-        desc: "Fit Stretch",
-        size: "S",
+        desc: "Extra Trim Fit Stretch Button-Up",
+        size: "M",
         color: "Blue",
-        item: "225170",
-        price: "6275",
+        item: "45470",
+        price: "2365",
         qty: 1,
     },
     {
@@ -102,14 +101,14 @@ var deatils = [
         cprice: "Now: INR 2,137",
         was: "Was: INR 3,228.98   40%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/kskotjk0/shirt/m/y/d/s-sr0006-chimpaaanzee-original-imag647sqykjmqqw.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/3a675965-fcd6-480d-916d-9d21d43f71e8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         image_url:
-            "https://rukminim1.flixcart.com/image/452/542/kskotjk0/shirt/m/y/d/s-sr0006-chimpaaanzee-original-imag647sqykjmqqw.jpeg?q=50",
+            "https://n.nordstrommedia.com/id/sr3/3a675965-fcd6-480d-916d-9d21d43f71e8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
         name: "Moonlight Nightshirt",
-        desc: "Fit Stretch",
-        size: "S",
-        color: "White",
-        item: "22370",
+        desc: "Extra Trim Fit Stretch Button-Up",
+        size: "M",
+        color: "Black",
+        item: "45470",
         price: "2137",
         qty: 1,
     },
@@ -120,17 +119,19 @@ var deatils = [
         spon: "Sponsored",
         comapny: "Vince",
         product: "Vince Metallic Smock Waist Tiered Cotton Blend Skirt",
-        name: "Vince Metallic Smock Waist Tiered Cotton Blend Skirt",
-        desc: "Fit Stretch",
+
         cprice: "",
         was: "INR 31,774.78",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/kv8fbm80/skirt/g/q/z/m-166-black-aahwan-original-imag86b5gxrzgabh.jpeg?q=50",
-        image_url: "https://rukminim1.flixcart.com/image/309/371/kv8fbm80/skirt/g/q/z/m-166-black-aahwan-original-imag86b5gxrzgabh.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/8607eb37-3f0e-4370-83cd-f463bbd67bc9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        image_url:
+            "https://n.nordstrommedia.com/id/sr3/8607eb37-3f0e-4370-83cd-f463bbd67bc9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        name: "Vince Metallic Smock Waist Tiered Cotton Blend Skirt",
+        desc: "Extra Trim Fit Stretch Button-Up",
         size: "S",
-        color: "Black",
-        item: "22345",
-        price: "2137",
+        color: "Blue",
+        item: "45470",
+        price: "3235",
         qty: 1,
     },
     {
@@ -144,16 +145,7 @@ var deatils = [
         cprice: "Now: INR 3,287 - INR 5,470.32",
         was: "Was: INR 5,470.98  Upto 40%off select color/size",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/keekmfk0-0/bra/4/7/i/lightly-padded-32c-no-regular-regular-contours-ink-blue-lovable-original-imafv3dgnrxxjghx.jpeg?q=50",
-        image_url:
-            "https://rukminim1.flixcart.com/image/309/371/keekmfk0-0/bra/4/7/i/lightly-padded-32c-no-regular-regular-contours-ink-blue-lovable-original-imafv3dgnrxxjghx.jpeg?q=50",
-        name: "Feathers Underwire Contour Bra",
-        desc: "Fit Stretch",
-        size: "M",
-        color: "Blue",
-        item: "24570",
-        price: "2137",
-        qty: 1,
+        pic: "https://n.nordstrommedia.com/id/sr3/0a65d941-2682-4e3a-bb0e-3a58f874adc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 8,
@@ -166,7 +158,7 @@ var deatils = [
         cprice: "Now: INR 3,499.40",
         was: "Was: INR 4,665.86   25%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/ks6ef0w0/bra/w/h/d/30b-bu-kristel-1-s-black-jockey-original-imag5spqz9dyuyxx.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/405a5703-fa9a-4309-9673-6e3b642c2891.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 9,
@@ -179,7 +171,7 @@ var deatils = [
         cprice: "Now:INR 3,282.19 – INR 5,470.32",
         was: "Was:INR 5,470.32Up to 40% off select colors/sizes",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/e0a2f664-83d5-4df6-8e20-fda4d7e4c773.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/e9737c84-c956-4a05-984f-a22a098d5ea5.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 10,
@@ -192,7 +184,7 @@ var deatils = [
         cprice: "",
         was: "INR 5,550.77",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/8a76914d-77ee-4065-bd30-a369b0b94d86.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/f305d54f-b29d-44cd-b946-8667a0964ab6.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 11,
@@ -205,7 +197,7 @@ var deatils = [
         cprice: "Now:INR 482.68",
         was: "Was:INR 965.3550% off",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/2a77a44b-0b91-4268-a3ad-666c521c1b99.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/3cd19957-fa46-4b17-bdf5-babaf8051c7c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 12,
@@ -218,7 +210,7 @@ var deatils = [
         cprice: "",
         was: "INR 4,746.31",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/d7ddc0c2-9394-4742-bbdb-2f1febbd2608.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/98123bfd-cffd-4958-846d-cd9974e24033.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 13,
@@ -231,7 +223,7 @@ var deatils = [
         cprice: "Now:INR 10,811.93",
         was: "Was:INR 13,514.9120% off",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/42b395b9-e428-4ab5-b555-fac74ac0822d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/4054e900-caae-4175-99bb-0ec3e76bb153.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 14,
@@ -244,7 +236,7 @@ var deatils = [
         cprice: "Now:INR 3,330.46",
         was: "Was:INR 5,550.77 40% off",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/0fef94dd-8108-46a7-95bf-c067fe7d08d1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/62e22274-91e9-4487-ba87-ee807bbb7cf3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 15,
@@ -257,7 +249,7 @@ var deatils = [
         cprice: "Now:INR 3,282.19",
         was: "Was:INR 5,470.3240% off",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/717c22b5-af1f-4ca4-a793-31aa07be4f45.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/6fdb54c3-7185-4075-b89b-7fd09be8f79d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 16,
@@ -270,7 +262,7 @@ var deatils = [
         cprice: "Now:INR 579.21",
         was: "Was:INR 965.3540% off",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/4e124061-670a-4b5f-9085-2a147a361cbc.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/03ec9f81-47d2-4f21-817c-9880012c11ec.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 17,
@@ -283,7 +275,7 @@ var deatils = [
         cprice: "Now:INR 7,079.24",
         was: "Was:INR 8,849.0520% off",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/812ca4ac-a857-46f2-856e-1144d4d53e8e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/03ec9f81-47d2-4f21-817c-9880012c11ec.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 18,
@@ -296,7 +288,7 @@ var deatils = [
         cprice: "",
         was: "INR 11,905.99",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/9033bc27-7b03-473c-8ef8-4a36c441b3e2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/e45e4250-d2ec-442c-bf13-72d18f341c1f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 19,
@@ -309,7 +301,7 @@ var deatils = [
         cprice: "",
         was: "INR 2,011.15",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/b87d0ccf-3906-4a12-8bfe-d547c08f4aef.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/2048c631-0e71-4406-a5cb-ce365ad5c364.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
         id: 20,
@@ -322,10 +314,10 @@ var deatils = [
         cprice: "",
         was: "INR 3,509.48",
         rating: "",
-        pic: "https://n.nordstrommedia.com/id/sr3/07e0abbf-4562-42e9-b574-c602ee75cf91.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        pic: "https://n.nordstrommedia.com/id/sr3/255d7fb7-4bcc-4bb6-abbf-34f5af43c952.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 5,
+        id: 21,
         type: "New Markdown",
         spon: "",
         chezz: "",
@@ -335,10 +327,10 @@ var deatils = [
         cprice: "Now: INR 2,137",
         was: "Was: INR 3,228.98   40%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/kskotjk0/shirt/m/y/d/s-sr0006-chimpaaanzee-original-imag647sqykjmqqw.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/40a2ee5c-5fa5-4abb-8826-f1580d6aa69f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2https://n.nordstrommedia.com/id/sr3/40a2ee5c-5fa5-4abb-8826-f1580d6aa69f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2https://n.nordstrommedia.com/id/sr3/40a2ee5c-5fa5-4abb-8826-f1580d6aa69f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2https://n.nordstrommedia.com/id/sr3/40a2ee5c-5fa5-4abb-8826-f1580d6aa69f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 6,
+        id: 22,
         type: "",
         chezz: "",
         spon: "Sponsored",
@@ -348,10 +340,10 @@ var deatils = [
         cprice: "",
         was: "INR 31,774.78",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/kv8fbm80/skirt/g/q/z/m-166-black-aahwan-original-imag86b5gxrzgabh.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/e258432a-eab5-493b-8444-8d87f3f10bb2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 7,
+        id: 23,
         type: "New Markdown",
         spon: "",
         chezz: "",
@@ -361,10 +353,10 @@ var deatils = [
         cprice: "Now: INR 3,287 - INR 5,470.32",
         was: "Was: INR 5,470.98  Upto 40%off select color/size",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/keekmfk0-0/bra/4/7/i/lightly-padded-32c-no-regular-regular-contours-ink-blue-lovable-original-imafv3dgnrxxjghx.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/0db2e4ee-48bf-4426-ae75-732bfe016614.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 8,
+        id: 24,
         type: "",
         spon: "",
         chezz: "Limted-Time sale",
@@ -374,23 +366,10 @@ var deatils = [
         cprice: "Now: INR 3,499.40",
         was: "Was: INR 4,665.86   25%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/ks6ef0w0/bra/w/h/d/30b-bu-kristel-1-s-black-jockey-original-imag5spqz9dyuyxx.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/8162a53d-feb4-48ab-b430-9e84c37758a7.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 1,
-        type: "New Markdown",
-        chezz: "",
-        spon: "",
-        comapny: "Nordstrom Lingerie",
-        product: "Moonlight Pajamas",
-
-        cprice: "Now: INR 3,137",
-        was: "Was: INR 5,228.98   40%off",
-        rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/kp5sya80/pyjama/v/b/r/l-tp4-pink-the-million-club-original-imag3g82tyz77etz.jpeg?q=50",
-    },
-    {
-        id: 2,
+        id: 26,
         type: "",
         chezz: "Limted-Time sale",
         spon: "",
@@ -400,10 +379,10 @@ var deatils = [
         cprice: "Now: INR 3,499.40",
         was: "Was: INR 4,665.86   25%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/ks6ef0w0/bra/w/h/d/30b-bu-kristel-1-s-black-jockey-original-imag5spqz9dyuyxx.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/885fe130-fcbf-4d8a-aca9-cab7d829b0eb.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 3,
+        id: 27,
         type: "",
         chezz: "",
         spon: "Sponsored",
@@ -413,10 +392,10 @@ var deatils = [
         cprice: "",
         was: "INR 6,274.78",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/kfoapow0-0/jean/d/z/m/26-7139195-roadster-original-imafw2gy99d5hhtz.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/304d4a1b-0e47-49e6-b809-5271ecdea45d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 4,
+        id: 28,
         type: "",
         spon: "",
         chezz: "Zella",
@@ -426,10 +405,10 @@ var deatils = [
         cprice: "Now: INR 2,365.11 - INR 3,153.48",
         was: "Was: INR 3,941.85 Up to 40% off select color/size",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/ksm49e80/jean/d/f/b/30-jdhol-blue-dnext-original-imag6546x3zpvmcv.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/a7828537-33c6-4b3b-a055-84dfec19d8c6.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 5,
+        id: 29,
         type: "New Markdown",
         spon: "",
         chezz: "",
@@ -439,10 +418,10 @@ var deatils = [
         cprice: "Now: INR 2,137",
         was: "Was: INR 3,228.98   40%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/kskotjk0/shirt/m/y/d/s-sr0006-chimpaaanzee-original-imag647sqykjmqqw.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/b3b4d2e4-df6c-466b-abeb-271a3214e5ec.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 6,
+        id: 30,
         type: "",
         chezz: "",
         spon: "Sponsored",
@@ -452,10 +431,10 @@ var deatils = [
         cprice: "",
         was: "INR 31,774.78",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/kv8fbm80/skirt/g/q/z/m-166-black-aahwan-original-imag86b5gxrzgabh.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/74c74781-8a1d-490c-b8d8-22dd42388d2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 7,
+        id: 31,
         type: "New Markdown",
         spon: "",
         chezz: "",
@@ -465,10 +444,10 @@ var deatils = [
         cprice: "Now: INR 3,287 - INR 5,470.32",
         was: "Was: INR 5,470.98  Upto 40%off select color/size",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/309/371/keekmfk0-0/bra/4/7/i/lightly-padded-32c-no-regular-regular-contours-ink-blue-lovable-original-imafv3dgnrxxjghx.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/73cd74fa-aadf-4c3d-9903-8ed186593e12.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
     {
-        id: 8,
+        id: 32,
         type: "",
         spon: "",
         chezz: "Limted-Time sale",
@@ -478,7 +457,7 @@ var deatils = [
         cprice: "Now: INR 3,499.40",
         was: "Was: INR 4,665.86   25%off",
         rating: "",
-        pic: "https://rukminim1.flixcart.com/image/452/542/ks6ef0w0/bra/w/h/d/30b-bu-kristel-1-s-black-jockey-original-imag5spqz9dyuyxx.jpeg?q=50",
+        pic: "https://n.nordstrommedia.com/id/sr3/a43170d6-2558-4378-abf6-d72d5ec11ead.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
     },
 ];
 
@@ -495,16 +474,18 @@ deatils.map(function (el, index) {
     var top = document.createElement("p");
     top.innerText = el.type;
     top.style.color = "red";
-    top.style.fontSize = "larger"
+    top.style.fontWeight = "900";
 
     var spone = document.createElement("p");
     spone.innerText = el.spon;
 
     var line = document.createElement("p");
     line.innerText = el.chezz;
+    line.style.fontWeight = "900";
 
     var comp = document.createElement("p");
     comp.innerText = el.comapny;
+    comp.style.fontWeight = "900";
 
     var pro = document.createElement("p");
     pro.innerText = el.product;
@@ -512,6 +493,7 @@ deatils.map(function (el, index) {
     var pri = document.createElement("p");
     pri.innerText = el.cprice;
     pri.style.color = "red";
+    pri.style.fontWeight = "600";
 
     var wa = document.createElement("p");
     wa.innerText = el.was;
