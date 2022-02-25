@@ -315,3 +315,12 @@ html{
   font-weight: bold;
   position: absolute;
 } */
+
+.twoImg{
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+.twoImg > div{
+  width: 48%;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Page</title>
+    <title>Nordstrom Online & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/footer.css">
@@ -31,7 +31,8 @@
         <!----------------Logo-Area----------->
         <div id="upperNav">
             <div id="logo">
-                <a href=""> <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nordstrom_Logo_2019.png"
+                <a href="/index.html"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nordstrom_Logo_2019.png"
                         alt="Logo"></a>
             </div>
             <div id="rightbox">
@@ -40,7 +41,7 @@
                 <span id="userSign">Sign In</span> <i style="padding-right: 30px; cursor: pointer;"
                     class="fa-solid fa-angle-down spa">
                     <div class="signInDrop">
-                        <button id="dropSignBtn">SignUp | Create Account</button>
+                        <button onClick="gotoSignIn()" id="dropSignBtn">SignUp | Create Account</button>
                         <ul style="list-style: none;">
                             <li style="font-size: 17px;" class="bold"> <a href=""> Your Account</a></li>
                             <li> <i class="fa-solid fa-briefcase"></i> <a class="marginLeft" href="">
@@ -64,7 +65,8 @@
                         </ul>
                     </div>
                 </i>
-                <i style="padding-right: 15px; cursor: pointer;" class="fa-solid fa-bag-shopping"></i>
+                <i onClick="gotoBag()" style="padding-right: 15px; cursor: pointer;"
+                    class="fa-solid fa-bag-shopping"></i>
             </div>
         </div>
 
@@ -1311,13 +1313,28 @@
     
             </div>
         </div> -->
-
-
-
-
-
-
-
+    </div>
+    <div class="twoImg">
+        <div style="border: 2px solid red;">
+            <img style="width: 100%;"
+                src="https://n.nordstrommedia.com/id/f80208ff-1d53-4a44-8d64-16a88d6d6078.jpeg?h=600&w=804" alt="">
+            <div style="width: 84%;">
+                <h4 style="    font-size: 20px;
+                color: #333;">Spotlight-Worthy Prom Looks</h4>
+                <p style="color: #333;">From elegant gowns to chic suits, dance the night away in the perfect prom looks
+                    for under $150. </p>
+            </div>
+        </div>
+        <div style="border: 2px solid red;">
+            <img style="width: 100%;"
+                src="https://n.nordstrommedia.com/id/6bdcc203-d4ce-4128-ac3b-36f0e4d5ef5f.jpeg?h=600&w=804" alt="">
+            <div style="width: 84%;">
+                <h4 style="    font-size: 20px;
+                    color: #333;">Diamond Classics Redefined</h4>
+                <p style="color: #333;">From elegant gowns to chic suits, dance the night away in the perfect prom looks
+                    for under $150. </p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -1420,6 +1437,13 @@
     // document.getElementById("userName").innerText = accArr[0].firstname + "!";
     document.getElementById("userSign").innerText = name;
     console.log(name);
+
+    function gotoSignIn() {
+        window.location.href = "signup.html";
+    }
+    function gotoBag() {
+        window.location.href = "bag.html";
+    }
 </script>
 
 </html>
