@@ -1521,6 +1521,13 @@
     function gotoSignIn() {
         window.location.href = "signup.html";
     }
+
+    var checkout = document.getElementById("nextBtn");
+    var Subtotal = document.getElementById("subTotal");
+    checkout.addEventListener("click", () => {
+        localStorage.setItem("subtotal", Subtotal.innerText);
+        window.location.href = "checkout.html";
+    })
 </script>
 
 </html>
