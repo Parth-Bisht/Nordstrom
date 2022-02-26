@@ -489,7 +489,7 @@
                         <div style="width: 14%;" class="col">
                             <ul>
                                 <li style="margin-bottom: 20px;" class="bold"><a href="">Kids: Get Inspired</a></li>
-                                <li class="bold"><a href="">New Arrivals</a></li>
+                                <li class="bold"><a href="/kid.html">New Arrivals</a></li>
                                 <!-- <li class="bold"><a href="">ASOS</a></li> -->
                                 <li class="bold"><a href="">Black Owned & Founded Brands</a></li>
                                 <li class="bold"><a href="">Bestsellers</a></li>
@@ -1418,7 +1418,7 @@
                         alt="">
                     <p>Men</p>
                 </div>
-                <div>
+                <div onClick="gotoKids()">
                     <img src="https://n.nordstrommedia.com/id/4fe1c4fc-f81b-4ccf-a661-2c0b5fef6dc7.jpeg?h=365&w=268"
                         alt="">
                     <p>Kids</p>
@@ -1758,6 +1758,9 @@
     }
     function gotoMen() {
         window.location.href = "menHome.html";
+    }
+    function gotoKids() {
+        window.location.href = "kid.html";
     }
 
     var nextBtn = document.getElementById("nextBtn");

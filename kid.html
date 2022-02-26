@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="./menHome.css">
+    <link rel="stylesheet" href="./kid.css">
     <script src="https://kit.fontawesome.com/66c7f85fa2.js" crossorigin="anonymous"></script>
     <!-- <script src="https://kit.fontawesome.com/157f106a6a.js" crossorigin="anonymous"></script> -->
     <title>Nordstrom Online & In Store: Shoes, Jewelry, Clothing, Makeup, Dresses</title>
@@ -128,6 +128,10 @@
 
         .signInDrop>ul>li {
             padding: 6px 11px;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         #dropSignBtn {
@@ -565,16 +569,6 @@
             margin-bottom: 60px;
         }
 
-        .poster {
-            height: 313px;
-            width: 90%;
-            margin-left: 30px;
-            display: flex;
-            background: url('https://n.nordstrommedia.com/id/1ad184a7-3f7f-40a1-8304-c098a593b604.jpeg?h=417&w=1334');
-            background-position: center;
-            background-size: cover;
-        }
-
         .btn {
             padding: 4px 53px;
             font-size: 17px;
@@ -588,10 +582,6 @@
 
         .btn:hover {
             background-color: #636262;
-        }
-
-        html {
-            scroll-behavior: smooth;
         }
 
         /* -----------------------------------------Down footer--------------------------------------------- */
@@ -618,7 +608,8 @@
         <!----------------Logo-Area----------->
         <div id="upperNav">
             <div id="logo">
-                <a href=""> <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nordstrom_Logo_2019.png"
+                <a href="/index.html"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nordstrom_Logo_2019.png"
                         alt="Logo"></a>
             </div>
             <div id="rightbox">
@@ -627,7 +618,7 @@
                 <span id="userSign">Sign In</span> <i style="padding-right: 30px; cursor: pointer;"
                     class="fa-solid fa-angle-down spa">
                     <div class="signInDrop">
-                        <button id="dropSignBtn">SignUp | Create Account</button>
+                        <button onClick="gotoSignIn()" id="dropSignBtn">SignUp | Create Account</button>
                         <ul style="list-style: none;">
                             <li style="font-size: 17px;" class="bold"> <a href=""> Your Account</a></li>
                             <li> <i class="fa-solid fa-briefcase"></i> <a class="marginLeft" href="">
@@ -879,7 +870,7 @@
                                 <li><a href="">Blazers</a></li>
                                 <li><a href="">Coats & Jackets</a></li>
                                 <li><a href="">Dress Shirts</a></li>
-                                <li><a href="">Jeans</a></li>
+                                <li><a href="/menHome.html">Jeans</a></li>
                                 <li><a href="">Joggers & Sweatpants</a></li>
                                 <li><a href="">Lounge, Pajamas & Robes</a></li>
                                 <li><a href="">Pants</a></li>
@@ -963,7 +954,7 @@
                         <div style="width: 14%;" class="col">
                             <ul>
                                 <li style="margin-bottom: 20px;" class="bold"><a href="">Kids: Get Inspired</a></li>
-                                <li class="bold"><a href="/kid.html">New Arrivals</a></li>
+                                <li class="bold"><a href="">New Arrivals</a></li>
                                 <!-- <li class="bold"><a href="">ASOS</a></li> -->
                                 <li class="bold"><a href="">Black Owned & Founded Brands</a></li>
                                 <li class="bold"><a href="">Bestsellers</a></li>
@@ -1725,7 +1716,7 @@
 
 
 
-    <div id="maincon" style="display: flex;margin-bottom: 60px;">
+    <div id="maincon" style="display: flex;">
         <div style="width: 300px;">
             <div class="category" style="display: flex; justify-content: space-around; border-top: 1px solid rgb(112, 111, 111); border-bottom: 1px solid rgb(112, 111, 111); padding:17px 10px;
             font-size: 15px; ">
@@ -1797,42 +1788,72 @@
 
         </div>
         <div>
-            <div class="poster">
-                <div
-                    style="height: 90%; width: 25%; font-size: 13px; color: #333; margin-top: 65px; margin-left: 69px;">
-                    <p style="font-size: 26px; margin-bottom: 5px;"> <strong>The Denim</strong> Lowdown </p>
-                    <p style="margin-bottom: 10px;    font-size: 16px;
-                    color: #333;">Double down on the season's hottest trends.</p>
-                    <p><a style="color: #403f3f;font-size: 17px;" href="">Slim Fit</a></p>
-                    <p><a style="color: #403f3f;font-size: 17px;" href="">Slim Straight Fit</a></p>
-                    <p><a style="color: #403f3f;font-size: 17px;" href="">Skinny Fit</a></p>
-                    <p><a style="color: #403f3f;font-size: 17px;" href="">Straight Fit</a></p>
-                    <p><a style="color: #403f3f;font-size: 17px;" href="">Relaxed Fit</a></p>
-                </div>
-                <!-- <div style="margin-left: 200px; display: flex;">
-                    <div style="height: 100%; width: 250px;">
-                        <img style="height: 100%; width: 100%;"
-                            src="https://media.istockphoto.com/photos/what-more-can-a-girl-ask-for-picture-id692879918?b=1&k=20&m=692879918&s=170667a&w=0&h=IUDRcJGiThbw-4uyUQSbmrGTSM28fVyCTWEgse4F0xA="
-                            alt="" />
-                    </div>
-
-
-                    <div style=" height: 100%; width: 250px;">
-                        <img style="height: 100%; width: 100%;"
-                            src="https://media.istockphoto.com/photos/portrait-of-stylish-young-african-man-model-wearing-denim-jacket-on-picture-id1323517272?b=1&k=20&m=1323517272&s=170667a&w=0&h=lKlu0voQz2u0xM5L27xzHlYAZSYNgkLsz1FBl3FoGfI="
-                            alt="" />
-                    </div>
-
-                </div> -->
-
-            </div>
             <div style="margin-bottom: 30px; margin-left: 50px; margin-top: 20px;">
-                <h3>Men's Jeans & Denim</h3>
+                <h3>Kids' New Arrivals</h3>
             </div>
 
-            <div id="models" style="display: grid; grid-template-columns: repeat(4, 1fr);"></div>
+            <div id="models" style="display: grid; grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 50px;"></div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <!-----------------UpperArea------------------>
         <div id="upper">
@@ -1945,4 +1966,4 @@
 </script>
 
 </html>
-<script src="./menHome.js"></script>
+<script src="./kid.js"></script>
