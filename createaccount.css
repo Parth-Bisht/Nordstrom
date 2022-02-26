@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;  
+    font-family: 'Yantramanav', sans-serif;
+    /* putting margin and padding to zero    */
+}
+
+/* Sign up Area */
+#info{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 90px auto;
+    color: #5c5a5a;
+    margin-bottom: 170px;
+}
+#info>h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #323232;
+}
+.icons{
+    display: flex;
+}
+.icons>p{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+#mail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+label{
+    font-weight: 600;
+    color: #323232;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+form>label{
+    font-weight: 600;
+    color: #323232;
+    /* line-height: 16px; */
+    margin-bottom: 9px;
+}
+input{
+    padding: 10px;
+    margin-bottom: 18px;
+    outline: none;
+    border: 1px solid #b5b2b2;
+    transition: all 0.3s ease-in-out;
+}
+input:focus{
+    border-bottom: 4px solid black;
+}
+p a{
+    color: #333;
+}
+form+p{
+    margin-bottom: 20px;
+    line-height: 21px;
+}
+#SignUp{
+    padding: 13px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#SignUp:hover{
+    background-color: #636262;
+}

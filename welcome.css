@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;  
+    font-family: 'Yantramanav', sans-serif;
+    /* putting margin and padding to zero    */
+}
+/* Sign up Area */
+#info{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 90px auto;
+    color: #393939;
+    margin-bottom: 170px;
+}
+#info>h3{
+    font-size: 1.7rem;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+h3+p{
+    margin-bottom: 13px;
+    font-size: 15px;
+}
+
+#rack>img:first-child{
+    padding-bottom: 3px;
+    width: 42%;
+}
+#rack>img:last-child{
+    width: 19%;
+    margin-left: 25px;
+}
+#shopNow{
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 19px;
+    background-color: white;
+    color: #414242;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+#shopNow:hover{
+    background-color: #dad8d8;
+    border: none;
+}
+#mobileSection{
+    /* border: 2px solid black; */
+    border-top: 1px solid #e3e1e1;
+    padding-top: 17px;
+}
+#mobileSection>div>img:first-child{
+    padding-bottom: 13px;
+    width: 42%;
+}
+#mobileSection>div>img:last-child{
+    width: 56%;
+    /* margin-left: 25px; */
+}
+#mobileSection>h3{
+    font-size: 1.7rem;
+    margin-bottom: 13px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+#rewards{
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#rewards>div{
+    /* border: 2px solid red; */
+    width: 33%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+label{
+    font-weight: 600;
+    /* line-height: 16px; */
+    color: #323232;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+input{
+    padding: 10px;
+    margin-bottom: 8px;
+    outline: none;
+    border: 1px solid #b5b2b2;
+    transition: all 0.3s ease-in-out;
+}
+input:focus{
+    border-bottom: 4px solid black;
+}
+p a{
+    color: #333;
+}
+form+p{
+    margin-bottom: 20px;
+    /* line-height: 21px; */
+    margin-top: -10px;
+    font-size: 13px;
+}
+p+p{
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+#SignUp{
+    padding: 10px;
+    font-size: 19px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#SignUp:hover{
+    background-color: #636262;
+}

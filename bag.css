@@ -1,0 +1,125 @@
+section{
+    padding: 22px 39px;
+}
+.buttons>button{
+    padding: 13px 45px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    margin-left: -4px;
+    border: 2px solid rgb(230, 230, 230);
+}
+.buttons>button:first-child{
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+.buttons>button:last-child{
+    background-color: white;
+    color: black;
+    
+}
+.container{
+    /* border: 2px solid black; */
+    display: flex;
+    color: rgb(114, 114, 114);
+    margin-bottom: 20px;
+}
+
+#bagItems{
+    /* border: 2px solid red; */
+    width: 80%;
+    font-size: 17px;
+}
+.itemInfo > p:nth-child(2){
+    margin-bottom: 10px;
+}
+.itemInfo > p:nth-child(5){
+    margin-bottom: 20px;
+}
+.itemInfo > p:nth-child(6){
+    margin-left: 25px;
+}
+.itemInfo > p:nth-child(7){
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.remove{
+    display: flex;
+    color: rgb(46, 46, 184);
+    /* cursor: pointer; */
+    /* justify-content: space-around; */
+}
+.remove>p{
+    cursor: pointer;
+}
+.remove>p:last-child{
+    margin-left: 55px;
+}
+.cart{
+    padding: 20px;
+    display: flex;
+}
+.cart img{
+    height: 140px;
+}
+.cart>div:not(:first-child){
+    width: 31%;
+}
+.cart>div:nth-child(3){
+    text-align: center;
+}
+.cart>div:nth-child(4){
+    text-align: center;
+}
+.cart>div:nth-child(2){
+    margin-left: 10px;
+}
+#frequentItems img{
+    height: 130px;
+}
+.info>p{
+    padding: 3px;
+}
+
+
+#nextBtn{
+    padding: 10px;
+    font-size: 19px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+#nextBtn:hover{
+    background-color: #333;
+}
+
+.paymentMethods>p{
+    margin-bottom: 6px;
+}
+.paymentMethods>img{
+    margin-bottom: 6px;
+}
+#frequentItems > div{
+    margin-bottom: 9px;
+    font-size: 15px;
+}
+.remBtn{
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e9e8e8;
+    padding: 1px 13px;
+    cursor: pointer;
+}
+.addBtn{
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e9e8e8;
+    padding: 1px 13px;
+    cursor: pointer;
+    margin-left: 6px;
+}
